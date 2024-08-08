@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [ParallelTests]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="TestYahoo(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.seleniumstandalonegrid.YahooTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="launchYahoo"/>
+        </methods>
+      </class> <!-- com.seleniumstandalonegrid.YahooTest -->
+    </classes>
+  </test> <!-- TestYahoo(failed) -->
+</suite> <!-- Failed suite [ParallelTests] -->

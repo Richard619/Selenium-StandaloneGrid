@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ParallelTests" parallel="tests" thread-count="2">
+    <test name="TestGoogle">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.seleniumstandalonegrid.GoogleTest"/>
+        </classes>
+    </test>
+    <test name="TestYahoo">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.seleniumstandalonegrid.YahooTest"/>
+        </classes>
+    </test>
+</suite>
